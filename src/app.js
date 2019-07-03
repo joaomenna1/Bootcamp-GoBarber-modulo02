@@ -1,11 +1,13 @@
 // metodo antigo
 // const express = require('express');
 // const routes = require('./routes');
-//para utilizar a sintaxe  a seguir precisa 
+// para utilizar a sintaxe  a seguir precisa
 // de um yarn add sucrase
 
 import express from 'express';
 import routes from './routes';
+
+import './database';
 
 class App {
   constructor() {
@@ -19,7 +21,7 @@ class App {
   }
 
   routes() {
-     this.server.use(routes);
+    this.server.use(routes);
   }
 }
 
